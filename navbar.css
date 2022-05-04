@@ -26,7 +26,8 @@
 nav {
   margin: 30px 0 15px 0;
   display: flex;
-  width: 50%;
+  width: 60%;
+  font-size: 0.8rem;
 }
 
 nav > a:first-child {
@@ -47,10 +48,13 @@ nav > figure {
 .navbar > div {
   width: 30%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
+.navbar > div > div {
+  margin-left: 2rem;
+}
 .cart-icon > figure {
   width: 30px;
   height: 30px;
@@ -76,7 +80,7 @@ nav > figure {
 }
 .preOrdr-Loc > div {
   display: flex;
-  width: 40%;
+  width: 50%;
   margin: auto;
 }
 
@@ -85,6 +89,9 @@ nav > figure {
   color: white;
   align-items: center;
   padding: 5px 0 6px;
+}
+.preOrdr-Loc > div > div > span {
+  margin: 0px 5px;
 }
 .preOrdr-Loc > div > div > figure {
   margin: auto;
@@ -127,4 +134,11 @@ nav > figure {
 .icon > a {
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Medium screens */
+@media all and (min-width: 100px) and (max-width: 1030px) {
+  * {
+    display: none;
+  }
 }
