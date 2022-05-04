@@ -136,15 +136,25 @@
   font-weight: bold;
 }
 
+/* max screen */
+@media all and (min-width: 1031px) {
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-navbar {
+    display: none;
+  }
+}
+
 /* Medium screens */
 @media all and (min-width: 100px) and (max-width: 1030px) {
   .desktop-navbar {
     display: none;
   }
-  .mobile-navbar > button > figure {
+  /* .mobile-navbar > button > figure {
     display: block;
     width: 10%;
-  }
+  } */
   .preOrdr-Loc {
     margin-top: 10px;
   }
@@ -161,6 +171,7 @@
     display: block;
     width: 35px;
     cursor: pointer;
+    z-index: 100;
 
     appearance: none;
     background: none;
@@ -191,5 +202,32 @@
   }
   .hamburger.is-active .bar {
     opacity: 0;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: white;
+    padding-top: 120px;
+    transition: 0.4s;
+  }
+  .mobile-nav.is-active {
+    right: 0;
+  }
+  .mobile-nav > a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    padding: 12px 16px;
+    background-color: rgb(195, 192, 192);
+    text-decoration: none;
+    color: black;
   }
 }
