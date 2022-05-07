@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="scroll.css" />
+    <link rel="stylesheet" href="progress-bar.css" />
     <title>KFC</title>
   </head>
+  <style>
+    ::-webkit-scrollbar {
+      width: 2em;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: hsl(120 50% 75% / 1);
+      margin-block: 0.2rem;
+      border-radius: 100vw;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: hsl(120 100% 20% / 1);
+      border-radius: 100vw;
+      height: 100%;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: hsl(120 100% 10% / 1);
+    }
+
+    .vertical-scroll {
+      background: hsl(120 100% 2% / 1);
+    }
+  </style>
   <body>
     <div class="container">
       <div class="stripe">
@@ -117,7 +143,197 @@
           </div>
         </div>
       </div>
+      <!-- carousel image slider -->
+      <div class="img-slider">
+        <div class="slide active">
+          <img src="./assets/img/banner1.jpg" alt="" />
+          <div class="info">
+            <h2>Slide 01</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/img/banner2.jpg" alt="" />
+          <div class="info">
+            <h2>Slide 02</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="slide-btn active"></div>
+          <div class="slide-btn"></div>
+        </div>
+      </div>
+      <!-- red stripe -->
+      <div class="red-stripe">
+        <h1>Finger Lickin' Good® is Now Just a Few Clicks Away</h1>
+        <a class="str-ordr-btn" href="#"> <span>Start Order</span></a>
+      </div>
+
+      <!-- featured items -->
+      <div class="features-title-box">
+        <div class="features-title">
+          <h1>featured items</h1>
+        </div>
+      </div>
+      <div class="media-scroller snaps-inline">
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Short title</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">A longer title here</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">An even longer title on this one</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">A dog that's blinking?</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Chair</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Ut enim ad minim veniam</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Duis aute irure dolor</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Cillum dolore eu</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title"></p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Excepteur sint occaecat cupidatat non proident</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">At lectus urnaVestibulum</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Vestibulum</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Adipiscing tristique risus nec feugiat</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Rutrum tellus pellentesque eu tincidunt</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Bibendum enim</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Amet commodo</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">A erat nam at lectus</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Pellentesque eu tincidunt tortor aliquam nulla</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Quam adipiscing vitae</p>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""
+          />
+          <p class="title">Fermentum</p>
+        </div>
+      </div>
+
+      <div class="progress-section">
+        <div class="progress-bar-wrap">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="progress-num"></div>
+      </div>
     </div>
   </body>
+  <script src="carousel.js" type="text/javascript"></script>
   <script src="navbar.js" type="text/javascript"></script>
+  <script src="progress-bar.js" type="text/javascript"></script>
 </html>
