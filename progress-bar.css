@@ -3,9 +3,6 @@
   width: 60%;
   height: 50%;
   margin: auto;
-  position: fixed;
-  top: 500px;
-  left: 500px;
   will-change: transform;
   transition: 0.3s ease-out;
   margin-bottom: 50px;
@@ -26,4 +23,10 @@
   width: 50%;
   height: 100%;
   background-color: red;
+}
+
+@media all and (min-width: 100px) and (max-width: 600px) {
+  .progress-section {
+    width: 80%;
+  }
 }
