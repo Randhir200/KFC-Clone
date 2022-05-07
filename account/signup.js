@@ -1,18 +1,23 @@
-var form = document.querySelector("form")
-form.addEventListener("submit", myfun)
-function myfun(event){
-event.preventDefault();
+// variable
+var form  = document.querySelector("form")
+form.addEventListener("submit", myfunction)
 
+var userData =JSON.parse(localStorage.getItem("users")) || [];
+console.log(userData)
 
-var emaildata = JSON.parse(localStorage.getItem("emailuser")) || []
-var obj = {
-    numbers:form.number.value,
-    emails:form.email.value
-}
-emaildata.push(obj)
-console.log(emaildata)
-localStorage.setItem("emailuser", JSON.stringify(emaildata))
+function myfunction(event){
+    event.preventDefault();
 
+    var obj =
+    {
+        firstname: form.fn.value,
+        lastname: form.ln.value,
+        email : form.email.value,
+        password1: form.number1.value
 
-console.log("summaiya")
+    }
+    userData.push(obj)
+    localStorage.setItem("users", JSON.stringify(userData))
+    window.location.href="login.html"
+
 }

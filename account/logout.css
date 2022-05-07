@@ -1,0 +1,38 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+#bigcontainer{
+border: 1px solid green;
+/* margin: auto; */
+height: auto;
+width:auto;
+display: flex;
+}
+
+#main1{
+    border: 3px solid red;
+    height: 500px;
+    width: 20%;
+    margin-left: 40px;
+    margin-top: 50px;
+}#img1{
+    width: 90px;
+    padding-left: 25px;
+
+}
+#main2{
+    border: 3px solid red;
+    height: auto;
+    width: auto;
+    margin-left: 40px;
+}#stripe{
+    margin-block-start: 0;
+    margin-bottom: 0rem;
+    width: 40px;
+    height: 3.6rem;
+    color: #e4002b;
+    fill: currentColor;
+    margin-inline-start: 0;
+    margin-left: 20px;
+}
