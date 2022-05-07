@@ -1,23 +1,4 @@
-.media-scroller {
-    width: 60%;
-    /* border: 1px solid grey; */
-    display: grid;
-    gap: 5px;
-    grid-auto-flow: column;
-    grid-auto-columns: 300px;
-    overflow-x: hidden;
-    overscroll-behavior-inline: contain;
-    margin: 50px auto;
-    cursor: pointer;
-  }
-  
-  .media-scroller.active {
-    background: rgb(255, 255, 255, 0.3);
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-    transform: scale(1);
-  }
-  
+
   .media-element {
     display: grid;
     grid-template-rows: min-content;
