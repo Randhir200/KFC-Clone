@@ -1,0 +1,119 @@
+.red-banner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  justify-content: flex-start;
+  height: 60vw;
+  background-color: #e4002b;
+}
+.red-banner > div:first-child {
+  margin: 0;
+}
+.red-banner > div {
+  text-align: center;
+  margin: 40px 0;
+  color: white;
+  font-weight: 600;
+}
+.red-banner > div > h3 {
+  text-transform: uppercase;
+  margin: 0 auto 50px;
+}
+
+.red-banner > div > h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 0 auto 10px;
+}
+
+.red-banner > div > p {
+  width: 36%;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin: 30px auto 10px;
+}
+
+.red-banner > div > figure {
+  width: 5%;
+  margin: auto;
+}
+.red-banner > div > figure > svg > path {
+  fill: white;
+}
+
+.red-banner > div:last-child {
+  display: flex;
+  flex-direction: row;
+}
+.red-banner > div:last-child > div:first-child {
+  width: 40%;
+  position: absolute;
+  left: 10%;
+  top: 35%;
+}
+.red-banner > div:last-child > div:last-child {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 60%;
+}
+
+.red-banner > div:last-child > div > img {
+  width: 100%;
+}
+.white-banner {
+  width: 100%;
+  height: 500px;
+  background-color: #f8f7f5;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #202124;
+}
+footer > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 10px;
+}
+footer > div > .logo {
+  width: 20%;
+  margin: 80px 10px;
+}
+
+footer > div > .logo > img {
+  width: 100%;
+}
+
+footer > div > div {
+  margin: 80px 10px;
+}
+footer > div > div {
+  color: white;
+}
+footer > div > div > ul {
+  list-style: none;
+  color: white;
+}
+
+footer > div > div > ul > li {
+  margin: 10px 0;
+}
+
+@media all and (min-width: 100px) and (max-width: 600px) {
+  .red-banner > div > h1 {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .red-banner > div > p {
+    display: none;
+  }
+}
