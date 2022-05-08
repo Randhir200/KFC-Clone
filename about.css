@@ -14,16 +14,18 @@ h3,p{
 }
 #firstbox>div:nth-child(1){
     width:60%;
-    height:100%;
+    height:auto;
     margin: auto;
-    border:2px solid red;
+    /* border:2px solid red; */
+    box-sizing: border-box;
+   
    
 }
 #firstbox>div:nth-child(2)
 {
     width:40%;
     height:100%;
-    border:2px solid green;
+    /* border:2px solid green; */
     
 }
 #firstboximg{
@@ -31,19 +33,16 @@ h3,p{
     height: auto;
 }
 #ifyoulikefriedchicken{
-    font-size:80px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-size:96px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
-    width: auto;
+    width: 100%;
     letter-spacing: -2px;
-    line-height: 80px;
+    line-height: 95px;
     word-spacing: 3px;
-    font-weight: 90;
+    /* font-weight: 90; */
     margin-top: 25px;
-    margin-bottom: 15px;
-    padding-left:0px;
-    padding-top:50px;
-    padding-bottom:50px;
+   
     
 
    
@@ -72,13 +71,13 @@ h3,p{
 #sectiondivider{
     height: 40px;
     width:100%;
-    border:1px solid blue;
+    /* border:1px solid blue; */
     display: flex;
 }
 #sectiondivider>div:nth-child(1){
     height:100%;
     width:30%;
-    border:1px solid teal;
+    /* border:1px solid teal; */
     
 }
 #sectiondivider>div:nth-child(1)>h3{
@@ -91,7 +90,7 @@ h3,p{
 #sectiondivider>div:nth-Child(2){
     height:100%;
     width:70%;
-    border:1px solid teal;
+    /* border:1px solid teal; */
 }
 
 #sectiondivider>div:nth-child(2)>hr{
@@ -110,7 +109,7 @@ h3,p{
 #parentOfSecondBox>div:nth-child(2){
     width:85%;
     height:600px;
-    border:2px solid red;
+    /* border:2px solid red; */
     margin: auto;
     margin-bottom: 12%;
     background-color:#E4002B ;
@@ -118,15 +117,15 @@ h3,p{
     flex-direction: row-reverse;
 }
 #secondChild>div{
-    height:98%;
+    height:100%;
     width:49%;
-    border:2px solid black;
+    /* border:2px solid black; */
     
 }
 #coin{
     height:auto;
     width:20%;
-    border:1px solid yellow;
+    /* border:1px solid yellow; */
     position: absolute;
     margin-top: 25%;
 
@@ -137,23 +136,19 @@ h3,p{
 #bucket{
     height:auto;
     width:100%;
-    border:1px solid yellow;
+    /* border:1px solid yellow; */
     position: relative;
-    margin-left:0px;
-    margin-top: 30px;
+    margin-left:0%;
+    margin-top: 8%;
 }
 #bucket>img{
     width:120%;
 }
-#secondChild>div>img{
-    width:70%;
-    margin-right:15%;
-    margin-top: 210px;
-}
+
 #secondChild>div>p:nth-child(1){
     color:white;
-    font-size: 14px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 25%;
     font-weight: 600;
     letter-spacing: 1px;
@@ -163,8 +158,8 @@ h3,p{
 #secondChild>div>h1{
     color:white;
     width:auto;
-    font-size:55px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-size:65px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 800;
     word-spacing: -5px;
     margin-top: -5px;
@@ -192,34 +187,51 @@ h3,p{
     #parentOfSecondBox>div:nth-child(2){
         width:85%;
         height:auto;
-        border:1px solid teal;
+        /* border:3px solid teal; */
         margin: auto;
         /* margin-bottom: 12%; */
         background-color:#E4002B ;
         display:block;
+        /* overflow: hidden; */
      
     }
     #secondChild>div{
-        height:98%;
+        height:auto;
         width:50%;
-        border:2px solid black;
+        /* border:2px solid black; */
         margin: auto;
         
     }
     #secondChild>div>p:nth-child(1)
     {
         text-align: center;
+        margin-top: 100px;
+        
     }
    #secondChild>div>h1+p{
        text-align: center;
    }
   #secondChild>div>h1{
       text-align: center;
-      font-size: 30px;
-      line-height: 50px;
+      font-size: 40px;
+      margin-top:-10px;
+      width:80%;
+      margin-left:13%;
   }
     #learnMoreButton{
-        margin-left: 25%;
+        margin-left: 27%;
+        box-sizing: border-box;
+        margin-bottom: -5%;
+    }
+    #coin{
+        /* border:2px solid green; */
+        height:auto;
+      
+      
+    }
+    #bucket{
+        /* border:2px solid green; */
+       margin-left: -1%;
     }
 }
 /* 3333333333333333333333333333333333333333333333333333333333 */
@@ -254,9 +266,9 @@ h3,p{
 }
 .theManTheMyth{
     /* color:red; */
-    font-size: 60px;
-    width:75%;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 65px;
+    width:70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing:1px;
     word-spacing: -5px;
 }
@@ -437,11 +449,12 @@ h3,p{
 }
 #forBackgroundAndDiv+div>p{
     line-height: 27px;
-    font-size:17px
+    font-size:17px;
+    color:rgb(73, 72, 72);
 }
 #forBackgroundAndDiv+div>h1{
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 33px;
 }
 @media all and (min-width: 65px) and (max-width: 1025px){
    #forBackgroundAndDiv{
@@ -470,7 +483,7 @@ h3,p{
 #afterBackgroundAndDiv>div:nth-child(1){
     height:100%;
     width:45px;
-    border:1px solid red;
+    /* border:1px solid red; */
     
 
 }
