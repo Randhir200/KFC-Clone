@@ -1,6 +1,5 @@
 // variable
 const slider = document.querySelector('.media-scroller');
-console.log(slider);
 let isDown = false;
 let startX;
 let scrollLeft;

@@ -1,5 +1,4 @@
 // Javascript for image slider autoplay navigation
-// console.log('Hlo');
 var slides = document.querySelectorAll('.slide');
 var btns = document.querySelectorAll('.slide-btn');
 let currentSlide = 1;
