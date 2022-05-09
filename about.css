@@ -1,9 +1,37 @@
 
 h3,p{
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
+#svg{
+    height:50px;
+    width:85%;
+    /* border:2px solid teal; */
+    margin: auto;
+}
+#stripes{
+    margin-block-start: 0;
+     width: 60px;
+     height: 3.6rem;
+     color: #e4002b;
+     fill: currentColor;
+     margin-inline-start: 0;
+     margin-left: 1px;
+     margin-top: -8px;
+    
+}
+@media all and (min-width:66px) and (max-width:1025px){
+    #stripes{
+        margin-block-start: 0;
+         width: 60px;
+         height: 3.6rem;
+         color: #e4002b;
+         fill: currentColor;
+         margin-inline-start: 0;
+         margin-left: 1px;
+         margin-top: -8px;
+        margin-left: 46%;
+    }
+}
 #firstbox{
     height:500px;
     width:85%;
@@ -122,6 +150,19 @@ h3,p{
     /* border:2px solid black; */
     
 }
+
+#secondChild>div>#stripes{
+    margin-block-start: 0;
+     width: 60px;
+     height: 3.6rem;
+     color: white;
+     fill: currentColor;
+     margin-inline-start: 0;
+     margin-left: 1px;
+     /* margin-top: -8px; */
+    
+}
+
 #coin{
     height:auto;
     width:20%;
@@ -145,16 +186,16 @@ h3,p{
     width:120%;
 }
 
-#secondChild>div>p:nth-child(1){
+.ourFood{
     color:white;
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 25%;
+    margin-top: 12%;
     font-weight: 600;
     letter-spacing: 1px;
-    /* margin-bottom: -10px; */
-    
-}
+    /* margin-bottom: -10px;   */
+ }
+ 
 #secondChild>div>h1{
     color:white;
     width:auto;
@@ -202,10 +243,22 @@ h3,p{
         margin: auto;
         
     }
-    #secondChild>div>p:nth-child(1)
+    #secondChild>div>#stripes{
+        margin-block-start: 0;
+         width: 60px;
+         height: 3.6rem;
+         color: white;
+         fill: currentColor;
+         margin-inline-start: 0;
+         margin-left:40%;
+         /* margin-top: -8px; */
+        
+    }
+    
+    .ourFood
     {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 70px;
         
     }
    #secondChild>div>h1+p{
@@ -439,7 +492,7 @@ h3,p{
 #forBackgroundAndDiv+div{
     height:auto;
     width:40%;
-    /* border:2px solid rgb(0, 225, 255); */
+    /* border:0.5px solid black; */
     margin-left: 50%;
     background-color: white;
     box-sizing: border-box;
@@ -456,6 +509,16 @@ h3,p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-size: 33px;
 }
+#stripes5Box{
+    margin-block-start: 0;
+    margin-bottom: 0rem;
+    width: 50px;
+    height: 3.6rem;
+    color: #e4002b;
+    fill: currentColor;
+    margin-inline-start: 0;
+    margin-top: -30px;
+}
 @media all and (min-width: 65px) and (max-width: 1025px){
    #forBackgroundAndDiv{
        position:static;
@@ -466,9 +529,13 @@ h3,p{
       
         margin:auto;
      position:inherit;
-     margin-top: -10px;
-     margin-bottom: 10px;
+     margin-top: -53px;
+    
     }
+}
+#forBackgroundAndDiv+div>h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 20px;
 }
 #afterBackgroundAndDiv{
       height:30px;
@@ -477,6 +544,7 @@ h3,p{
       display: flex;
       margin: auto;
       margin-bottom: -10px;
+      margin-top: 20px;
 
       
 }
@@ -513,6 +581,7 @@ h3,p{
     /* border:1px solid blue; */
     margin-top: 3%;
     display: flex;
+    margin-bottom: 20px;
 }
 #noBackgroundBoxes>div:nth-child(1){
     height:400px;
@@ -522,11 +591,11 @@ h3,p{
     background-position: center;
     background-size:cover;
     border-radius: 5px;
-    background-image: url("https://images.ctfassets.net/9tka4b3550oc/5Cki0qVf7HBH5wJhgxH9Hj/fc2b19768c3365d79e9ae71032da5b81/about-routing-primary.jpg?w=640");
+    background:rgb(0,0,0,0.5) url("https://images.ctfassets.net/9tka4b3550oc/5Cki0qVf7HBH5wJhgxH9Hj/fc2b19768c3365d79e9ae71032da5b81/about-routing-primary.jpg?w=640");
+    background-blend-mode: darken;
     display: flex;
     justify-content: center;
      align-items: center;
-     opacity: 0.6;
     
 }
 #noBackgroundBoxes>div:nth-child(2){
@@ -537,11 +606,9 @@ h3,p{
     background-position: center;
     background-size:cover;
     border-radius: 5px;
-    background-image: url("https://images.ctfassets.net/9tka4b3550oc/7xIarT0xxLx8fy3db1FIGQ/3e99a5ebf9147657dc3f59e309204c03/about-routing-1.jpg?w=640");
-    display: flex;
-    opacity:0.6;
-     background-color: blue;
-   
+    background: rgb(0,0,0,0.5) url("https://images.ctfassets.net/9tka4b3550oc/7xIarT0xxLx8fy3db1FIGQ/3e99a5ebf9147657dc3f59e309204c03/about-routing-1.jpg?w=640");
+    background-blend-mode: darken;
+    display: flex;   
     justify-content: center;
     align-items: center;
 }
@@ -601,4 +668,23 @@ h3,p{
  
     width:100%
 }
+}
+
+/* footer------------- */
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid rgb(212, 25, 172); */
+    height: 400px;
+    background-color: black;
+    color: white;
+    padding: 80px 40px;
+        }
+ .subFooter{
+    /* border: 1px red solid; */
+    height: 300px;
+        }
+.subFooter>p,.subFooter>h4{
+    font-family: Arial, Helvetica, sans-serif;
 }
