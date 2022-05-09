@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="logout.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="logout.css" />
     <title>logout page</title>
-</head>
-<body>
-  
-    <div id="bigcontainer"> 
-
-        <!-- first div -->
-    <div id="firstdiv">
+  </head>
+  <body>
+    <div id="bigcontainer">
+      <!-- first div -->
+      <div id="firstdiv">
         <div id="Grid">
-            <!-- <h1>Order History</h1> -->
-             <div id="stripe">
+          <!-- <h1>Order History</h1> -->
+          <div id="stripe">
             <figure id="FloatingRail_account-floating-rail__stripes__r2ZAB">
-                <svg viewBox="0 0 42 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+              <svg
+                viewBox="0 0 42 20"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+              >
                 <path class="strip-1" d="M0 0h8v20H0z"></path>
                 <path class="strip-2" d="M16 0h8v20h-8z"></path>
                 <path class="strip-3" d="M32 0h8v20h-8z"></path>
-            </svg>
-        </figure>
-    </div> 
-        <div id="float">
-                <img  id="img1" src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-1/254348453_6431611340214173_7426349924156068704_n.png?stp=dst-png_p720x720&_nc_cat=103&ccb=1-6&_nc_sid=1eb0c7&_nc_ohc=sIVaWKx1D3sAX8ro00-&_nc_ht=scontent.fpat3-3.fna&oh=00_AT9wh_TdIh59WVG5OzRASKWJoczy8Z7lKF1IkSJwVeYeiw&oe=627B5C57" alt="">
-                <div id="log">
-                    <h1>Howdy, Summaiya!</h1>
-                    <a  href=""><p id="a">Log Out</p></a>
-                </div>
-                
+              </svg>
+            </figure>
+          </div>
+          <div id="float">
+            <img
+              id="img1"
+              src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-1/254348453_6431611340214173_7426349924156068704_n.png?stp=dst-png_p720x720&_nc_cat=103&ccb=1-6&_nc_sid=1eb0c7&_nc_ohc=sIVaWKx1D3sAX8ro00-&_nc_ht=scontent.fpat3-3.fna&oh=00_AT9wh_TdIh59WVG5OzRASKWJoczy8Z7lKF1IkSJwVeYeiw&oe=627B5C57"
+              alt=""
+            />
+            <div id="log">
+              <h1 id="username">Howdy, Summaiya!</h1>
+              <p id="logoutbtn">Log Out</p>
             </div>
-            <div id="nav">
+          </div>
+          <div id="nav">
             <nav id="Account">
-                <ul>
-                    <li>
-                        <a href="">Order History</a>
-                    </li>
-                    <li>
-                        <a href="">Payment</a>
-                    </li>
-                    <li>
-                        <a href="">Account Settings</a>
-                    </li>
-                </ul>
+              <ul>
+                <li id="cart-history">
+                  <p>Cart History</p>
+                </li>
+                <li>
+                  <a href="">Payment</a>
+                </li>
+                <li>
+                  <a href="">Account Settings</a>
+                </li>
+              </ul>
             </nav>
+          </div>
         </div>
+      </div>
+
+      <!-- second div -->
+      <div id="secdiv">
+        <div id="po">
+          <!-- <h2>PAST ORDERS</h2> -->
         </div>
-   
-</div>
+        <div id="right-aside">
+          <div id="npo">
+            <h1 id="item-status">
+              NO PAST ORDERS AVAILABLE. LET’S START AN ORDER!
+            </h1>
+          </div>
 
+          <!-- <div id="btn"> -->
+          <a href="../index.html">
+            <button>Start Order</button>
+          </a>
+          <!-- </div> -->
 
-<!-- second div -->
-<div id="secdiv">
-    
-<div id="po">
-<h2>PAST ORDERS</h2>
-</div>
-<div id="abdul">
-<div id="npo">
-    <h1>NO PAST ORDERS AVAILABLE. LET’S START AN ORDER!</h1>
-</div>
-
-<!-- <div id="btn"> -->
-<button>Start Order</button>
-<!-- </div> -->
-
-<div id="img">
-    <img src="https://online.kfc.co.in/static/media/empty_cart.32f17a45.png" alt="">
-</div>
-
-
-</div>
-</div>
-
-
-
-
-
-</div>
-</body>
+          <div id="img-box">
+            <img
+              id="img"
+              src="https://online.kfc.co.in/static/media/empty_cart.32f17a45.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../assets/js/logout.js" type="text/javascript"></script>
 </html>

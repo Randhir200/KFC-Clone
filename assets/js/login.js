@@ -27,6 +27,7 @@ else{
          alert("Login Successful")
          status = true;
          localStorage.setItem('signinData', JSON.stringify(elem));
+         window.location.href="../index.html"
             }
     });
     if(!status){
