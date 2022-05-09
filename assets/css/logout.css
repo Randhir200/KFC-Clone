@@ -7,6 +7,7 @@
   height: auto;
   width: auto;
   display: flex;
+  margin: 20px auto;
 }
 
 #firstdiv {
@@ -154,17 +155,24 @@ li > p {
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media all and (min-width: 100px) and (max-width: 450px) {
+@media all and (min-width: 100px) and (max-width: 650px) {
   #firstdiv {
-    height: auto;
-    width: auto;
-    margin: auto;
+    width: 30%;
+    margin-left: 10px;
+  }
+  #right-aside{
+    position: relative;
   }
   #secdiv {
-    height: auto;
-    width: auto;
+    width: 65%;
+    margin-right: 15px;
   }
-
+  .ordr-btn{
+    margin-bottom: 0;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 8%;
+  }
   #imgdiv {
     height: auto;
     width: auto;
