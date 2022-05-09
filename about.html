@@ -5,10 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="./assets/css/about.css">
+      <link rel="stylesheet" href="./assets/css/index.css">
 
 </head>
 <body>
+    <!-- this container only for navbar -->
+    <div class="container">
+        <div class="stripe">
+            <figure>
+              <svg
+                viewBox="0 0 42 20"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+              >
+                <path class="strip-1" d="M0 0h8v20H0z"></path>
+                <path class="strip-2" d="M16 0h8v20h-8z"></path>
+                <path class="strip-3" d="M32 0h8v20h-8z"></path>
+              </svg>
+            </figure>
+          </div>
+          <!-- desktop size navbar -->
+          <div class="desktop-navbar">
+            <nav class="desktop-nav">
+              <a href="">Kentucky Fried Chicken</a>
+              <a href="">Menu</a>
+              <a href="">Careers</a>
+              <a href="">About</a>
+              <a href="">Find A KFC</a>
+              <figure>
+                <svg viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.25 6.05c0-.303.248-.55.55-.55.302 0 .55.247.55.55v3.3c0 .913-.737 1.65-1.65 1.65H1.65C.737 11 0 10.263 0 9.35V3.3c0-.913.737-1.65 1.65-1.65h3.3c.303 0 .55.247.55.55 0 .302-.247.55-.55.55h-3.3a.552.552 0 0 0-.55.55v6.05c0 .302.247.55.55.55H7.7c.302 0 .55-.248.55-.55v-3.3zM9.9 1.1H7.15A.552.552 0 0 1 6.6.55c0-.303.247-.55.55-.55h3.3c.303 0 .55.247.55.55v3.3c0 .302-.248.55-.55.55a.552.552 0 0 1-.55-.55V1.1z"
+                  ></path>
+                  <path
+                    d="M4.79 6.99a.548.548 0 1 1-.775-.775l6.05-6.05a.548.548 0 1 1 .776.775L4.79 6.99z"
+                  ></path>
+                </svg>
+              </figure>
+            </nav>
+            <div>
+              <button>Continue Your Order</button>
+              <div class="icon">
+                <a href="#" id="usertag">
+                  <i id="usericon" class="fa fa-user" aria-hidden="true"></i
+                ></a>
+              </div>
+              <div class="vrline"></div>
+              <div class="cart-icon">
+                <figure>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.5 28.8">
+                    <path
+                      d="M21.7 28.8H3.3c-1 0-1.8-.4-2.4-1.1-.6-.6-1-1.6-.8-2.5l1.2-22C1.3 1.4 2.8 0 4.5 0H23c1 0 1.8.4 2.4 1.1.6.6 1 1.6.8 2.5l-1.2 22c0 1.7-1.5 3.2-3.3 3.2z"
+                      fill="#FFF"
+                    ></path>
+                    <path
+                      d="M5.2 27H.8L2.2 2.6l.2-1.4.8-.4h3.4L5.2 27zM27.6 26l-4.2 1h-4.3L20.7.9H25L27.6 26z"
+                      fill="#E52E2A"
+                    ></path>
+                    <path
+                      d="M21.8 28.8H3.3c-1 0-1.8-.4-2.4-1.1-.6-.6-1-1.6-.8-2.5l1.2-22C1.4 1.4 2.8 0 4.5 0H23c1 0 1.8.4 2.4 1.1.6.6 1 1.6.8 2.5l-1.2 22c0 1.7-1.4 3.2-3.2 3.2zM4.5 1.7c-.9 0-1.5.6-1.5 1.5l-1.2 22c0 .4.1.9.4 1.1.2.4.7.5 1.1.5h18.5c.8 0 1.4-.6 1.4-1.5l1.2-22c0-.4-.1-.9-.4-1.1-.2-.4-.7-.5-1.1-.5H4.5z"
+                    ></path>
+                    <path
+                      d="M13.6 6.4c-2.8 0-4.9-2.2-4.9-4.9h1.8c0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1h1.8c0 2.7-2.1 4.9-4.9 4.9zM21 27l.2 1.8h.6c.2 0 .4 0 .6-.1 1.1-.2 3.2-.7 4.5-1.1 1.4-.5 1.6-1.8 1.5-2.4L26.2 2.7l-.6.3 1.1 22.5c.1.5-.3.7-.5.7L21 27z"
+                    ></path>
+                  </svg>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- mobile size navbar -->
+          <nav class="mobile-nav">
+            <a href="">Kentucky Fried Chicken</a>
+            <a href="">Menu</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+            <a href="">Find A KFC</a>
+          </nav>
+          <div class="mobile-navbar">
+            <div>
+              <div class="hamburger">
+                <div class="bar"></div>
+              </div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+     <!-- Pre order location section   -->
+     <div class="preOrdr-Loc">
+        <div>
+          <div>
+            <figure class="">
+              <svg viewBox="0 0 9 12" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.49 12c2.335-1.862 4.876-4.924 4.466-8.028C8.67 1.697 6.743 0 4.49 0 2.154 0 .228 1.78.023 4.138-.264 7.2 2.195 10.179 4.49 12zm0-8.98c.901 0 1.639.746 1.639 1.656 0 .91-.738 1.655-1.64 1.655-.901 0-1.639-.745-1.639-1.655S3.588 3.02 4.49 3.02z"
+                ></path>
+              </svg>
+            </figure>
+            <span>Pickup:</span>
+            <span>Ranchi, Jharkhand</span>
+          </div>
+          <div>
+            <figure class="PreOrderBar_pre-order-bar__icon-time__2kdlW">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                <path
+                  d="M9 18A9 9 0 1 0 9 0a9 9 0 0 0 0 18zM7.741 5.04h1.8v3.948l2.617 2.616-1.273 1.273-3.144-3.144V5.041z"
+                ></path>
+              </svg>
+            </figure>
+            <span> Estimate: </span>
+            <span>ASAP&nbsp;!</span>
+          </div>
+          <div>
+            <button>change</button>
+          </div>
+        </div>
+      </div>
+    </div>
         <div id="svg">
             <figure id="stripes">
                     <svg viewBox="0 0 42 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -181,4 +295,5 @@
            <h4>Resources</h4>
 
 </body>
+<script src="./assets/js/index.js"></script>
 </html>

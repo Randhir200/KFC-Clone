@@ -91,6 +91,9 @@ li > p {
   margin-top: 60px;
   margin-right: 110px;
 }
+.icon > p {
+  font-weight: bold;
+}
 #npo {
   border: 1px solid rgba(228, 225, 225, 0.754);
   width: 50%;
@@ -108,7 +111,7 @@ li > p {
   /* border: 1px solid blueviolet; */
   background-color: hsla(0, 10%, 89%, 0.754);
   height: auto;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 /* #btn{
     border: 1px solid darkblue;
@@ -119,7 +122,7 @@ li > p {
   
     
 } */
-button {
+.btn {
   padding: 15px 40px;
   margin-left: 50px;
   margin-top: 20px;
@@ -138,7 +141,7 @@ button {
   margin-top: -20px;
   display: flex;
 }
-#img-box> img {
+#img-box > img {
   margin: auto;
   width: 50%;
   height: 400px;

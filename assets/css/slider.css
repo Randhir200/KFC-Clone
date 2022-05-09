@@ -90,7 +90,14 @@
   .media-scroller {
     width: 80%;
     margin: 20px auto;
+    overflow-x: auto;
   }
+  .quick-media-scroller {
+    width: 80%;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+
   .media-element > div > p {
     margin: 6px 2px;
     font-size: 12px;
