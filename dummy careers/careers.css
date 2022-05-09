@@ -1,0 +1,774 @@
+#firstbox{
+    height:400px;
+    width:100%;
+ background:rgb(0,0,0,0.7)url("https://images.ctfassets.net/9tka4b3550oc/5tRiGfQXCdlrlRXDVPWdYT/79fca81cf69dad4129d7f6c0e9c873f9/hero-careers.jpg?w=1680");
+ background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#firstbox>div>h1{
+    color:white;
+    font-size:60px;
+    font-family:"Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+#firstbox>div>h1+p{
+    color:white;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    width:92%;
+    text-align: center;
+}
+
+/* REEBEEN */
+#reebeen{
+    height:63px;
+    width:100%;
+    /* border:1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+#reebeenLeftBox{
+    width:30%;
+    height:100%;
+    /* border:1px solid red; */
+    margin-left: 10%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#reebeenLeftBox>div>h3{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px;
+}
+
+#reebeenRightBox{
+    width:60%;
+    /* border:1px solid red; */
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+#reebeenRightBox>div{
+  width:fit-content;
+  height:100%;
+  /* border:1px solid black; */
+  margin-right: 3px;
+  box-sizing: border-box;
+  padding: 0px 8px 0px 8px;
+  display: flex;
+  align-items: center;
+}
+#reebeenRightBox>div>h3{
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray
+}
+#reebeenRightBox>div>h3:hover{
+    color:white;
+}
+@media all and (min-width:66px) and (max-width:950px){
+    #reebeenLeftBox>div>h3{
+        font-size:13px;
+    }
+    #reebeenRightBox>div>h3{
+        font-size:11px;
+    }
+}
+
+/* CAREERMAP */
+#careerMap{
+    height:650px;
+    width:100%;
+    /* border:1px solid black; */
+    position: absolute;
+    box-sizing: border-box;
+   
+
+}
+#careerMap>img{
+    width:100%;
+    height:100%;
+}
+@media all and (min-width:65px)and (max-width:1024px){
+    #careerMap{
+        width:100%;
+        height:400px;
+        position: static !important;
+        /* width: 100%; */
+    }
+}
+/* CLOSER TO MAP */
+#stripes{
+    margin-block-start: 0;
+   margin-top: -10px;
+    width: 60px;
+    height: 3.6rem;
+    color: #e4002b;
+    fill: currentColor;
+    margin-inline-start: 0;
+    margin-bottom: -50px;
+    margin-left: 5px;
+   
+}
+
+
+#closerToMap{
+    height:420px;
+    width:35%;
+    /* border:1px solid blue; */
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-top: 10px;
+    position: relative;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+#closerToMap>h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1px;
+    margin-top: 70px;
+}
+input,select{
+    width:90%;
+    border-radius:20px;
+    /* border:1px solid black; */
+    height:35px;
+    margin-bottom: 20px;
+   font-size: 16px;
+}
+.submitButton{
+    
+    padding: 13px 60px;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    margin-top: 15px;
+    background-color: black;
+    color:white;
+}
+@media all and (min-width:65px) and (max-width:1025px){
+    #closerToMap{
+        width:90%;
+        height:auto;
+        margin: auto;
+        position: static !important;
+        margin-top: 1%;
+        background-color: rgb(253, 252, 251);
+        box-sizing: border-box;
+        padding-bottom: 3%;
+        padding-top: 5px;
+        
+    }
+    #closerToMap>h1{
+        font-size:19px;
+        width:16%;
+    }
+}
+
+/* apply for job */
+#applyForJob{
+    height:100px;
+    width:80%;
+    margin:auto;
+    /* border:1px solid blue; */
+    margin-top: 170px;
+}
+#applyForJob>h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#applyForJob>h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: -8px;
+}
+@media all and (min-width:65px) and (max-width:1025px){
+    #applyForJob{
+        width:90%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    #applyForJob>h1{
+        font-size:25px;
+    }
+    #applyForJob>h4{
+        font-size:15px;
+    }
+}
+
+
+/* JOB EXPERIENCE */
+#jobexperience{
+    height:500px;
+    width:80%;
+    /* border:1px solid blue; */
+    margin: auto;
+    display: flex;
+   
+}
+
+#jobexperience>div{
+    height:100%;
+    width:35%;
+    border:1px solid black;
+    margin-right: 10px;
+}
+#jobexperience>div>p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 370px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+#jobexperience>div>h1{
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    font-size:26px;
+    
+}
+#jobexperience>div:nth-child(1)
+ {
+     background-color: aqua;
+     background-size: cover;
+     background-image: url("https://images.ctfassets.net/9tka4b3550oc/2gCjL7qPDqysOrgf3H9vAA/71487ce4241a79c730cafe3e4b312f84/cook.jpg?w=470");
+ }
+
+ #jobexperience>div:nth-child(2){
+    background-size: cover; 
+    background-image: url("https://images.ctfassets.net/9tka4b3550oc/3kEbJ6F1XBJUd1sa4dzhH2/2fce139fc9a6b19a4c4651062d811b16/kfc_customer_sevice.jpg?w=470");
+ }
+
+ #jobexperience>div:nth-child(3){
+    background-size: cover; 
+    background-image: url("https://images.ctfassets.net/9tka4b3550oc/4xLm9Q4797pqf7HpmC4saD/5802b9d05723df5b29e017c1510d5a97/shift-supervisor.jpg?w=470");
+ }
+
+ #jobexperience>div:nth-child(4) 
+ {
+    background-size: cover; 
+    background-image: url("https://images.ctfassets.net/9tka4b3550oc/4HnWhgDCm3rJh0vBgiTPI0/49e7a06a569b3bee25d3af2382795885/assistant-manager.jpg?w=470");
+ }
+
+ #jobexperience>div:nth-child(5){
+    background-size: cover; 
+    background-image: url("https://images.ctfassets.net/9tka4b3550oc/6FLb2pZ5kvgbt31ZU76z2R/fb1f085258e8fab90716922bc41ca371/general-manager.jpg?w=470");
+ }
+@media all and (min-width:651px) and (max-width:950px){
+    #jobexperience>div>h1{
+     font-size:18px;
+    }
+    #jobexperience>div>p{
+        font-size:13px;
+    }
+}
+
+@media all and (min-width:100px) and (max-width:650px){
+    #jobexperience{
+        height:370px;
+        width:90%;
+        /* border:1px solid blue; */
+        margin: auto;  
+    }
+
+    #jobexperience>div>h1{
+        font-size:15px;
+       }
+       #jobexperience>div>p{
+           font-size:11px;
+           margin-top: 300px;
+       }
+}
+ /* INTERVIEW PROCESS */
+
+ #interviewProcess{
+     height:400px;
+     width:80%;
+     margin:auto;
+     /* border:1px solid blue; */
+     margin-top:5px;
+     box-sizing: border-box;
+     padding-top: 5%;
+ }
+ #interviewProcess>h4{
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: bold;
+ }
+ #interviewProcess>h1{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 45px;
+ }
+
+ #interviewProcess>p{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     width: 50%;
+     line-height: 25px;
+     font-size: 15px;
+     font-weight: 200;
+ }
+@media all and (min-width:65px) and (max-width:1025px){
+    #interviewProcess{
+        width:90%;
+        height: auto;
+
+    }
+    #interviewProcess>h1{
+        font-size:35px;
+    }
+    #interviewProcess>p{
+        width:auto;
+    }
+}
+
+
+ /* NEXT BOX STRT */
+ .lineWidth{
+     height:30px;
+     width:80%;
+     /* border:1px solid blue; */
+     margin:auto;
+     margin-top:15px;
+ }
+
+ /* APPLICATION PART */
+
+ .application{
+     height:auto;
+     width:80%;
+     /* border:1px solid purple; */
+     margin:auto;
+     margin-top: 20px;
+ }
+ .application>h4{
+     color:gray;
+     font-family:Arial, Helvetica, sans-serif;
+     font-size: 18px;
+     
+ }
+ .application>h1{
+     margin-top: -15px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+ }
+ .application>p{
+     font-size: 15px;
+     font-weight: 100;
+     font-family: Arial, Helvetica, sans-serif;
+     
+
+ }
+ @media all and (min-width:65px) and (max-width:1025px){
+     .lineWidth{
+         width:90%;
+         margin:auto;
+     }
+     .application{
+         width:90%;
+     }
+     .application>h1{
+         font-size: 20px;
+     }
+ }
+ /* I AM THE EXPERIENCE NEW THING  */
+
+ #IamTheExperience{
+     height:auto;
+     width:80%;
+     margin:auto;
+     /* border:1px solid blue; */
+     margin-top: 50px;
+     display: flex;
+     flex-direction: row-reverse;
+ }
+ #IamTheExperience>div{
+     height:100%;
+     width:50%;
+     margin:auto;
+     /* border:1px solid purple; */
+ }
+ #IamTheExperience>div>img{
+     width:100%;
+ }
+ #IamTheExperience>div>h1{
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 35px;
+     width:90%;
+     margin-left:50px;
+ }
+ #IamTheExperience>div>p{
+     margin-left: 53px;
+     font-size: 17px;
+     margin-top: 25px;
+     font-family:Arial, Helvetica, sans-serif;
+
+ }
+
+ @media all and (min-width:65px) and (max-width:1025px){
+    #IamTheExperience{
+        width:90%;
+        display: block;
+    }
+    #IamTheExperience>div{
+        width:100%;
+    }
+    #IamTheExperience>div>h1{
+        font-size:20px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    #IamTheExperience>div>p{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+ }
+ /* SAFETY SECTION */
+ #restaurantSafety{
+     height:100px;
+     width:80%;
+     /* border:1px solid blue; */
+     margin:auto;
+     margin-top: 40px;
+ }
+ #restaurantSafety>h4, #restaurantSafety>h1{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ @media all and (min-width:65px) and (max-width:1025px){
+    #restaurantSafety{
+        width:90%;
+        height:auto;
+
+    }
+    #restaurantSafety>h1{
+        font-size:22px;
+    }
+    #restaurantSafety>h4{
+        font-size:15px;
+        margin-bottom: -8px;
+    }
+ }
+
+ /* PARENT OF SAFETY */
+#parentOfSafety{
+    height:370px;
+    width:80%;
+    /* border:1px solid blue; */
+    margin:auto;
+    display: flex;
+    margin-top:30px;
+}
+ #parentOfSafety>div{
+     height:100%;
+     width:49%;
+     /* border:1px solid red; */
+     border-radius: 4px;
+     background-color: rgb(250, 245, 245);
+     margin-right: 13px;
+ }
+ #parentOfSafety>div>img{
+     margin-left: 23px;
+     margin-top: 25px;
+ }
+ #parentOfSafety>div>h1{
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     margin-left:23px;
+
+ }
+ #parentOfSafety>div>p{
+     margin-left: 20px;
+     font-size: 18px;
+     margin-top: 25px;
+     width:90%;
+     line-height: 28px;
+ }
+ @media all and (min-width:65px) and (max-width:1025px){
+    #parentOfSafety{
+        width:90%;
+    }
+ }
+ /* COVID CHECKING SECTION */
+
+#covidCheckingSection{
+    height:auto;
+    width:80%;
+    /* border:1px solid blue; */
+    margin:auto;
+    display:flex;
+    flex-direction: row-reverse;
+    margin-top: 10%;
+
+}
+#covidCheckingSection>div{
+    height:100%;
+    width:50%;
+    /* border:1px solid red; */
+
+}
+#covidCheckingSection>div>img{
+    width:100%;
+}
+#covidCheckingSection>div>h1{
+    margin-left: 15%;
+    margin-top:20%;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 47px;
+}
+
+#covidCheckingSection>div>p{
+    margin-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media all and (min-width:65px)  and (max-width:1025px){
+    #covidCheckingSection{
+        width:90%;
+        display: block;
+    }
+    #covidCheckingSection>div{
+        width:100%;
+    }
+    #covidCheckingSection>div>h1{
+        font-size: 22px;
+        line-height:1.5;
+        margin: auto;
+    }
+    #covidCheckingSection>div>p{
+        margin-left: 0px;
+        font-size: 16px;
+    }
+
+}
+/* IMAGE IN GROUP AND DIV */
+
+#imageInGroupAndDiv{
+    height:auto;
+    width:100%;
+    /* border:1px solid blue; */
+    margin: auto;
+    margin-top: 10%;
+    position: absolute;
+}
+#imageInGroupAndDiv>img{
+    width:100%;
+}
+
+/* CORPORATE CAREERS SSSSSSS */
+#corporateCareers>#stripes{
+    margin-block-start: 0;
+     width: 60px;
+     height: 3.6rem;
+     color: #e4002b;
+     fill: currentColor;
+     margin-inline-start: 0;
+     margin-bottom: -50px;
+     margin-left: 1px;
+     margin-top: -20px;
+}
+
+#corporateCareers{
+    height:450px;
+    width:40%;
+    /* border:1px solid red; */
+    position: relative;
+    background-color: #FFFF;
+    margin-left: 52%;
+    margin-top: 18%;
+    box-sizing: border-box;
+    padding: 20px 45px;
+}
+#corporateCareers>h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    margin-top: 13%;
+}
+#corporateCareers>h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#corporateCareers>p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  
+}
+
+#learnMoreButton{
+    padding: 15px 40px 15px 40px;
+    /* margin-left: 40%; */
+    font-size: 14px;
+    border-radius: 25px;
+    border:none;
+    color:white;
+    background-color:#E4002B;
+    font-weight: bold;
+
+}
+#learnMoreButton:hover{
+    background-color: rgb(194, 70, 80);
+}
+@media all and (min-width:65px)  and (max-width:1025px){
+    #imageInGroupAndDiv{
+        position: static !important;
+    }
+    #corporateCareers{
+        width:90%;
+        position: static !important;
+        margin: auto;
+        height: auto;
+      padding: 0px;
+        margin-top: 2%;
+    }
+    #corporateCareers>h4{
+        margin-top: 5%;
+        font-size:15px;
+        margin-left: 0px;
+    }
+    #corporateCareers>h1{
+        font-size:18px;
+        margin-left: 0px;
+    }
+    #corporateCareers>p{
+        font-size:14px
+    }
+}
+/* ##REFERENCES TO MINIMUM AGE */
+
+#referencesToMinimumAge{
+    height:300px;
+    width:80%;
+    /* border:1px solid blue; */
+    
+    margin: auto;
+    margin-top: 12%;
+    display: flex;
+    align-items: center;
+}
+#referencesToMinimumAge>p{
+    font-family: Arial, Helvetica, sans-serif;
+    width:87%;
+    font-size: 21px;
+    line-height: 28px;
+    color:rgb(63, 61, 61)
+   
+}
+
+@media all and (min-width:65px)  and (max-width:1025px){
+    #referencesToMinimumAge{
+        margin-top: 3%;
+        width: 90%;
+    }
+}
+/* EXPLORE CAREER PATHS AND LINE WITH HR */
+#exploreCareerPathsAndLineWithHR{
+    height:50px;
+    width:80%;
+    /* border:1px solid blue; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#exploreCareerPathsAndLineWithHR>div:nth-child(1){
+    width:220px;
+    /* border:1px solid red; */
+}
+#exploreCareerPathsAndLineWithHR>div:nth-child(1)>h4{
+  margin-top: 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1.5px;
+  color:rgb(58, 57, 57)
+}
+
+#exploreCareerPathsAndLineWithHR>div:nth-child(2){
+    width:77%;
+    /* border:1px solid teal; */
+  
+}
+@media all and (min-width:65px)  and (max-width:1025px){
+    #exploreCareerPathsAndLineWithHR{
+        width:90%;
+    }
+}
+
+/* TWO DIVS FOR BG IMAGE  */
+#twoDivsForBGImage{
+    height:400px;
+    width:80%;
+    /* border:1px solid blue; */
+    margin:auto;
+    display:flex;
+justify-content: space-between;
+margin-bottom:20px;
+}
+#twoDivsForBGImage>div{
+    height:100%;
+    width:49%;
+    /* border:1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#twoDivsForBGImage>div:nth-child(1){
+    background:rgb(0,0,0,0.5) url("https://images.ctfassets.net/9tka4b3550oc/4Ib0hIQA7tdYuV3oBHHzqY/e1ad0a11c544279e1895f42eb72df68f/routing-careers-culture.jpg?w=640");
+   background-size: cover;
+   background-blend-mode: darken;
+}
+
+#twoDivsForBGImage>div:nth-child(2){
+    background:rgb(0,0,0,0.5) url("https://images.ctfassets.net/9tka4b3550oc/50tkcHRFTh0VgPIlhPRpIF/d28c820fc7f7bbbd26ae6ad1ad832cbe/routing-careers-growth.jpg?w=640");
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+#twoDivsForBGImage>div>h1{
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media all and (min-width:650px)  and (max-width:1025px){
+    #twoDivsForBGImage{
+        width:90%;
+        display: block;
+    }
+    #twoDivsForBGImage>div{
+        width:100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media all and (min-width:66px) and (max-width:649px)
+{
+    #twoDivsForBGImage{
+        height:200px;
+        width:90%;
+    }
+    #twoDivsForBGImage>div{
+        width:100%;
+    }
+}
+
+
+
+/* FOOTER------------ */
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid rgb(212, 25, 172); */
+    height: 400px;
+    background-color: black;
+    color: white;
+    padding: 80px 40px;
+        }
+ .subFooter{
+    /* border: 1px red solid; */
+    height: 300px;
+        }
+
+        .subFooter>p,.subFooter>h4{
+            font-family: Arial, Helvetica, sans-serif;
+        }
