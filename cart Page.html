@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cartPage.css">
+    <title>Cart page</title>
+    <!-- <style>
+     
+      
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <!-- <button id="backtomenu">
+          <a  href="kfcmenu.html">Back To Menu</a>
+        </button> -->
+        <div id="header-right">
+          <!-- <div>
+            <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt="">
+          </div>
+          <p>Sign In</p>
+        </div>
+
+        <div>
+
+        </div>  -->
+      </div>
+      <!-- <div class="location">
+        <div>
+          <img src="https://online.kfc.co.in/static/media/GoogleMapLocation.c86d640b.svg" alt="">
+        </div>
+       <p>Location : Bengaluru,India</p>
+       <div>
+         <img src="https://online.kfc.co.in/static/media/clock.264bac4c.svg" alt="">
+       </div>
+       <p>Estimate:ASAP !</p>
+       <button>Change</button>
+      </div> -->
+      <div class="main">
+        <div id="empty">
+          <h1>YOUR CART IS EMPTY. LET'S START AN ORDER!</h1>
+          <button class="start"><a href="kfcmenu.html">Start Order</a></button> 
+        </div>
+      </div>
+        <div class="aside">
+          <div id="empty1">
+            <img src="https://online.kfc.co.in/static/media/empty_cart.32f17a45.png"
+            alt=""
+        /> 
+          </div>
+          <div class="checkOutCard">
+            <div class="checkout-t-item">
+              <h2 class="checkout-t-num">1</h2>
+              <h2>ITEMS</h2>
+            </div>
+            <div class="offer">
+              <p>% Apply Offers &amp; Deals</p>
+              <!-- <button>View All</button> -->
+            </div>
+            <div class="subtotal">
+              <p>Subtotal</p>
+              <p class="subprice"></p>
+            </div>
+            <div class="gsttotal">
+              GST
+              <p>7%</p>
+            </div>
+            <div class="rtaxdiv">
+              <p>Restaurant Handling (Incl. Taxes)</p>
+              <p>₹35.00</p>
+            </div>
+            <div class="hope">
+              <p>
+                <input type="checkbox" />Donate ₹5.00 Tick to Add Hope.<img
+                  src="download.png"
+                  style="width: 15%; align-self: center"
+                />
+              </p>
+              <p>Our goal is to feed 20 million people by 2022</p>
+            </div>
+            <button class="checkout-totalbtn">
+              <p>Checkout</p>
+              <p class="checkoutPrice">₹0</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="quesdiv">
+          <div>
+            <h2>FAQ</h2>
+            <p>How can I change the information for my credit/debit card or select a different default payment method?</p>
+            <p>What to expect for delivery?</p>
+            <p>How do I change or cancel my pickup order once I’ve placed my order?</p>
+            <button>View All FAQ's</button>
+          </div>
+
+          <div class="contactvia">
+            <h2>STILL HAVE A QUESTION?</h2>
+            <div>
+              <div class="call-email">
+                <div class="c-con">
+                  <div class="c-conimg">
+                    <img src="https://online.kfc.co.in/static/media/Call_Icon.95900156.svg" alt="">
+                  </div>
+                  <p>Call Us</p>
+                </div>
+              <div class="c-con">
+                <div>
+                  <img src="https://online.kfc.co.in/static/media/Mail_Icon.3eaa02d7.svg" alt="">
+                </div>
+                <p>Contact Us</p>
+              </div>
+              </div>
+            </div>
+        </div>
+         
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
+<script>
+  // document.querySelector("button").addEventListener("click",removeElem);
+  // function removeElem(){
+  //     event.preventDefault();
+  //     document.querySelector(".main").innerText="";
+  //     document.querySelector(".aside").innerText="";
+  // }
+ 
+  // variable
+
+  
+  let addedPrice = JSON.parse(localStorage.getItem('addedPrice')) || 0;
+  
+  var kfcCart = JSON.parse(localStorage.getItem('kfc-cart'))||[];
+  localStorage.setItem('addedItem', JSON.stringify(kfcCart));
+  document.querySelector('.subprice').innerText=addedPrice;
+  console.log(document.querySelector('.subprice').innerText=addedPrice)
+  let totalItem = JSON.parse(localStorage.getItem('totalItem')) || 0;
+
+  document.querySelector('.checkout-t-num').innerText = totalItem;
+  display(kfcCart);
+  
+  let empty = document.querySelector('#empty');
+  let empty1 = document.querySelector("#empty1");
+  let empty2 = document.querySelector(".checkOutCard");
+  console.log(empty)
+  console.log(empty1)
+  console.log(empty2)
+  
+  // console.log(empty);
+  if(kfcCart.length !=0 ){
+    empty.style.display = 'none';
+    empty1.style.display = 'none';
+  }else{
+    
+    empty.style.display = 'flex';
+    empty2.style.display = 'none';
+  
+  }
+  function display(data) {
+    // document.querySelector('.main').innerText = '';
+    // document.querySelector('.aside').innerText = '';
+
+    data.forEach(function (elem, index) {
+      var box = document.createElement('div');
+      box.className = 'cartitemcard';
+
+      var cimg = document.createElement('img');
+      cimg.className = 'c-itemimg';
+      cimg.src = elem.image;
+
+      var cimgdiv = document.createElement('div');
+      cimgdiv.className = 'c-itemimgdiv';
+      cimgdiv.append(cimg);
+
+      var cartItemName = document.createElement('p');
+      cartItemName.className = 'c-ItemName';
+      cartItemName.innerText = elem.name;
+      cartItemName.style.fontSize = '18px';
+
+      var removeItem = document.createElement('p');
+      removeItem.className = 'removeItem';
+      removeItem.innerText = 'Remove';
+      removeItem.style.textDecoration = 'underline';
+      removeItem.style.fontWeight = 'bold';
+
+      removeItem.addEventListener('click', function () {
+        remove(elem, index);
+      });
+
+      var nrdiv = document.createElement('div');
+      nrdiv.className = 'name-remove';
+      nrdiv.append(cartItemName, removeItem);
+
+      var decbtn = document.createElement('button');
+      decbtn.className = 'countbtn';
+      decbtn.innerText = '-';
+      decbtn.style.alignSelf = 'center';
+      decbtn.style.fontSize = '24px';
+      decbtn.addEventListener('click', function () {
+        var decPrice = itemDec(elem,index);
+        localStorage.setItem('addedPrice', JSON.stringify(addedPrice));
+        // window.location.reload();
+      });
+      var ivalue = document.createElement('p');
+      ivalue.className = 'countivalue';
+      ivalue.innerText = elem.count;
+      var incbtn = document.createElement('button');
+      incbtn.className = 'countbtn';
+      incbtn.innerText = '+';
+      incbtn.style.alignSelf = 'center';
+      incbtn.style.fontSize = '24px';
+      incbtn.addEventListener('click', function () {
+        var incPrice = itemInc(elem, index);
+        localStorage.setItem('addedPrice', JSON.stringify(addedPrice));
+        // window.location.reload();
+      });
+      
+      var countdiv = document.createElement('div');
+      countdiv.className = 'quant';
+      countdiv.style.gap = '12px';
+      countdiv.append(decbtn, ivalue, incbtn);
+      
+      var citemprice = document.createElement('p');
+      citemprice.className = 'ciprice';
+      citemprice.innerText = elem.price;
+      citemprice.style.alignSelf = 'center';
+      
+      box.append(cimgdiv, nrdiv, countdiv, citemprice);
+      
+      document.querySelector('.main').append(box);
+    });
+    
+    // var checkoutcard = document.createElement('div');
+    // checkoutcard.className = 'checkOutCard';
+    
+    // //    div-1
+    // var ct_item = document.createElement('div');
+    // ct_item.className = 'checkout-t-item';
+    // var ct_num = document.createElement('h2');
+    // ct_num.className = 'checkout-t-num';
+    // var totalcount = totalartcount();
+    // ct_num.innerText = totalcount;
+    // var ct_text = document.createElement('h2');
+    // ct_text.innerText = 'ITEMS';
+    // ct_item.append(ct_num, ct_text);
+
+    // // div-2
+    // var offerdiv = document.createElement('div');
+    // offerdiv.className = 'offer';
+
+    // var applyofr = document.createElement('p');
+    // applyofr.innerText = '% Apply Offers & Deals';
+
+    // var ofrbtn = document.createElement('button');
+    // ofrbtn.innerText = 'View All';
+
+    // offerdiv.append(applyofr, ofrbtn);
+
+    // // div-3
+    // var items_price = document.createElement('div');
+    // items_price.className = 'subtotal';
+
+    // var items_price_p1 = document.createElement('p');
+    // items_price_p1.innerText = 'Subtotal';
+    // var items_price_p2 = document.createElement('p');
+    // items_price_p2.className = 'subprice';
+    // items_price_p2.innerText = addedPrice;
+
+    // items_price.append(items_price_p1, items_price_p2);
+
+    // // div 4
+    // var gst_div = document.createElement('div');
+    // gst_div.className = 'gsttotal';
+
+    // var gst_div_p1 = document.createElement('p');
+    // gst_div.innerText = 'GST';
+    // gst_div_p2 = document.createElement('p');
+    // gst_div_p2.innerText = '89.00';
+    // gst_div.append(gst_div_p1, gst_div_p2);
+
+    // // div 5
+    // var rtax_div = document.createElement('div');
+    // rtax_div.className = 'rtaxdiv';
+    // var rtax_div_p1 = document.createElement('p');
+    // rtax_div_p1.innerText = 'Restaurant Handling (Incl. Taxes)';
+    // var rtax_div_p2 = document.createElement('p');
+    // rtax_div_p2.innerText = '₹35.00';
+    // rtax_div.append(rtax_div_p1, rtax_div_p2);
+
+    // // div 5 Hope Donate Div
+    // var hope_div = document.createElement('div');
+    // hope_div.className = 'hope';
+    // var hope_div_p1 = document.createElement('p');
+    // var checkbox = document.createElement('input');
+    // checkbox.setAttribute('type', 'checkbox');
+    // var hopeimg = document.createElement('img');
+    // hopeimg.style.width = '15%';
+    // hopeimg.style.alignSelf = 'center';
+    // hopeimg.src = 'download.png';
+    // var hope_div_p2 = document.createElement('p');
+    // hope_div_p2.innerText = 'Our goal is to feed 20 million people by 2022';
+
+    // hope_div_p1.append(checkbox, 'Donate ₹5.00 Tick to Add Hope.', hopeimg);
+    // hope_div.append(hope_div_p1, hope_div_p2);
+
+    // // checkout Button
+    // var checkout_btn = document.createElement('button');
+    // checkout_btn.className = 'checkout-totalbtn';
+
+    // var checkout_btn_p1 = document.createElement('p');
+    // checkout_btn_p1.innerText = 'Checkout';
+    // var checkout_btn_p2 = document.createElement('p');
+    // checkout_btn_p2.innerText = '₹4000.00';
+
+    // checkout_btn.append(checkout_btn_p1, checkout_btn_p2);
+
+    // checkoutcard.append(
+    //   ct_item,
+    //   offerdiv,
+    //   items_price,
+    //   gst_div,
+    //   rtax_div,
+    //   hope_div,
+    //   checkout_btn
+    // );
+
+    // document.querySelector('.aside').append(checkoutcard);
+  }
+
+  function totalartcount() {
+    return 1;
+  }
+ 
+
+  function itemInc(ele,index) {
+    addedPrice += Number(ele.price);
+    document.querySelector('.subprice').innerText=addedPrice;
+    var c =  ele.count;
+    kfcCart[index].count = ++c; 
+    console.log(document.querySelector('.countivalue'));
+    localStorage.setItem('kfc-cart', JSON.stringify(kfcCart));
+    document.querySelector('.countivalue').innerText = kfcCart[index].count;
+    document.querySelector('.checkoutPrice').innerText = parseInt(addedPrice*(0.07)+addedPrice);
+    totalItem++
+    document.querySelector('.checkout-t-num').innerText = totalItem;
+    localStorage.setItem('totalItem', JSON.stringify(totalItem));
+    return addedPrice;
+    
+  }
+  
+  function itemDec(ele,index) {
+
+    if(kfcCart[index].count>1){ 
+      var c =  ele.count;
+      kfcCart[index].count = --c; 
+      addedPrice -= Number(ele.price);
+      document.querySelector('.subprice').innerText=addedPrice;
+      document.querySelector('.countivalue').innerText = c;
+    localStorage.setItem('kfc-cart', JSON.stringify(kfcCart));
+    document.querySelector('.checkoutPrice').innerText = parseInt(addedPrice*(0.07)+addedPrice);
+    totalItem--
+    document.querySelector('.checkout-t-num').innerText = totalItem;
+    localStorage.setItem('totalItem', JSON.stringify(totalItem));
+    }
+    return addedPrice;
+    
+  }
+  function remove(ele, index) {
+    addedPrice -= ele.price;
+    console.log(addedPrice);
+    localStorage.setItem('addedPrice', JSON.stringify(addedPrice));
+    kfcCart.splice(index, 1);
+    localStorage.setItem('kfc-cart', JSON.stringify(kfcCart));
+    window.location.reload();
+  }
+</script>
