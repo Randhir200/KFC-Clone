@@ -56,11 +56,21 @@
 .desktop-navbar > div > div {
   margin-left: 1.2rem;
 }
-.cart-icon > figure {
+.cart-icon > a > figure {
   width: 30px;
   height: 30px;
 }
-
+#cartvalue {
+  align-self: center;
+  position: relative;
+  bottom: 8px;
+  left: 12px;
+  color: white;
+  background-color: #e4002b;
+  width: fit-content;
+  padding: 3px 6px 3px 6px;
+  border-radius: 50%;
+}
 .desktop-navbar > div > button {
   background-color: #e4002b;
   min-width: 13.5rem;
