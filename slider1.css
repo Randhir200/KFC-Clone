@@ -1,0 +1,60 @@
+
+  .media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 20px;
+    padding: 5px;
+    background: 10px;
+    border-radius: 2px;
+  }
+  
+  .media-element > div {
+    width: 300px;
+    height: 350px;
+    background-color: #f8f7f5;
+  }
+  .media-element > div:last-child {
+    width: 200px;
+    height: auto;
+    background-color: white;
+  }
+  
+  .media-element > div > img:hover {
+    inline-size: 98%;
+  }
+  
+  .media-element > div > img {
+    inline-size: 95%;
+    aspect-ratio: 10 / 11;
+    object-fit: cover;
+    transition: transform 0.15s cubic-bezier(0.5, 0, 0.5, 1) 0s,
+      -webkit-transform 0.15s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  }
+  
+  .media-element > div > p {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+  
+  .snaps-inline {
+    /* scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 100px;
+    scroll-margin-inline: 50px; */
+  }
+  
+  .snaps-inline > * {
+    /* scroll-snap-align: start; */
+  }
+  
+  /* Small screens */
+  @media all and (min-width: 100px) and (max-width: 600px) {
+    .media-scroller {
+      width: 80%;
+      margin: 20px auto;
+    }
+    .media-element > div > p {
+      margin: 6px 2px;
+      font-size: 12px;
+    }
+  }
+  

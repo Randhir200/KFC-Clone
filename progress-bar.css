@@ -1,0 +1,32 @@
+.progress-section {
+  z-index: 101;
+  width: 60%;
+  height: 50%;
+  margin: auto;
+  will-change: transform;
+  transition: 0.3s ease-out;
+  margin-bottom: 50px;
+}
+
+.progress-bar-wrap {
+  position: relative;
+  width: 100%;
+  height: 1%;
+  overflow: hidden;
+  background-color: rgb(70, 70, 70);
+  border: 1px solid black;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+
+@media all and (min-width: 100px) and (max-width: 600px) {
+  .progress-section {
+    width: 80%;
+  }
+}

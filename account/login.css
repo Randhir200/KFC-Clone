@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(255, 255, 255);  
+}
+body div{
+    height: auto;
+    width: auto;
+    margin: auto;
+
+}#signup{
+    box-shadow: 1px 0px 11px 1px grey;
+    padding: 40px;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+h1
+{
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #494949;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 7%;
+    margin-top: 10px;
+} 
+#para1 
+{
+    margin-top: 6%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight:bolder;
+    font-size: 30px;
+    line-height: 35px;
+    color: #202124;
+    margin-bottom: 7%; 
+    margin-right: 200px;
+    height: auto;
+    
+}
+#para
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #202124;
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#number
+{
+    border: none;
+    text-align: left;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #202124;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;    color: #202124;
+    padding-bottom: 0.7%;
+    position: relative;
+    margin-top: 10px;
+}
+#email
+{
+    border: none;
+    text-align: left;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #202124;
+    outline: none;
+    font-family: 'National 2 Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    line-height: 24px;    color: #202124;
+    padding-bottom: 0.7%;
+    position: relative;
+    margin-top: 15px;
+}
+#btn
+{
+    width: 99%;
+    background: #eaeaea;
+    color: #202124;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border-radius: 66px;
+    border: 1px solid #202124;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px 45px;
+    cursor: pointer;
+    margin-top: 25px;
+
+}
+#para2
+{
+    font-style: normal;
+    font-weight:lighter;
+    font-size: 18px;
+    line-height: 20px;
+    color: #202124;
+    display: block;
+    margin-top: 40px;
+   margin-left: 20px;
+    margin-bottom: 40px;
+}
+#stripes{
+    margin-block-start: 0;
+    margin-bottom: 0rem;
+    width: 50px;
+    height: 3.6rem;
+    color: #e4002b;
+    fill: currentColor;
+    margin-inline-start: 0;
+}
+.forgot-password {
+    font-size: 18px;
+    text-decoration: underline;
+    height: 30px;
+    margin-top: 9px;
+ 
+}#login{
+   
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: -40px;
+   
+}
+#pass{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 30px;
+}
+#header{
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}#header h1{
+    font-family: cursive;
+    vertical-align: baseline;
+    font-size:25px;
+    color: #202124;
+    font-weight: bold;
+
+}#box1{
+
+    height:auto;
+    width:90%;
+    margin-top: 6%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight:bolder;
+    font-size: 30px;
+    line-height: 35px;
+    color: #202124;
+    margin-bottom: 7%; 
+    margin-right: 200px;
+    height: auto;
+    display: flex;
+    
+}
+
+@media all and (min-width: 100px) and (max-width:900px){
+    #signup{
+        box-shadow: 1px 0px 11px 1px grey;
+        padding: 40px;
+        width: auto;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    } 
+    #box1
+    {
+        height:auto;
+        width:90%;
+        margin-top: 6%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+        font-weight:bolder;
+        font-size: 30px;
+        line-height: 35px;
+        color: #202124;
+        margin-bottom: 7%; 
+        margin-right: 200px;
+        height: auto;
+        display: flex; 
+    }
+   
+}
